@@ -1,7 +1,5 @@
 export const searchStates = (query, searchKey, states) => {
-  if (!query) {
-    return [];
-  }
+  if (!query) return [];
 
   const lowerCaseQuery = query.toLowerCase()
 
@@ -10,10 +8,9 @@ export const searchStates = (query, searchKey, states) => {
       return state[searchKey]
         .toLowerCase()
         .startsWith(lowerCaseQuery);
-    })
-    .slice(0, 6)
+    }).slice(0, 6)
 };
 
 export const getState = (codeToFind, states) => {
-  return states.find(({ code }) => code === codeToFind)
+  return states.find(({code}) => code === codeToFind)
 }
