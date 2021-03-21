@@ -3,12 +3,8 @@
   "scripts": {
     "start": "parcel src/index.html",
     "test": "jest --watch",
-    "format": "npx prettier --write ."
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
+    "format": "npx prettier --write .",
+    "prepare": "husky install"
   },
   "author": "Jakub Pusiak JS Dżem",
   "license": "ISC",
