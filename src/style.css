@@ -1,0 +1,29 @@
+.App {
+  margin: 50px auto;
+  max-width: 400px;
+}
+
+.Symbols {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.ImageWrapper {
+  max-width: 45%;
+}
+
+.Flag {
+  border: 1px solid #CCC;
+}
+
+.Map {
+  margin: 40px 0;
+}
+
+.dropdown,
+.dropdown-trigger,
+.dropdown-menu {
+  width: 100%;
+}

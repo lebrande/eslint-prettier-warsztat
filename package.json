@@ -1,0 +1,25 @@
+{
+  "name": "eslint-prettier-warsztat",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "test": "jest --watch"
+  },
+  "author": "Jakub Pusiak JS Dżem",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.9.1",
+    "classnames": "^2.2.6",
+    "parcel-bundler": "^1.12.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.13",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.7.1",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3"
+  }
+}
