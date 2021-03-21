@@ -15,7 +15,7 @@ const Select = ({
         <div className="select">
           <select
             value={value}
-            onChange={({ target }) => onSelect(target.value)}
+            onChange={({target}) => onSelect(target.value)}
           >
             {children}
           </select>
