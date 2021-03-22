@@ -1,5 +1,6 @@
 import React from 'react';
 
+// eslint-disable-next-line
 const Select = ({ label, value, onSelect, children }) => {
   return (
     <div className="field">
