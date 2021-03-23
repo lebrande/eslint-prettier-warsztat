@@ -13,13 +13,15 @@ describe('StateSearch', () => {
     ];
 
     render(
-      <SearchStateContext.Provider value={{
-        query: '',
-        list: testList,
-        onPick: jest.fn(),
-      }}>
+      <SearchStateContext.Provider
+        value={{
+          query: '',
+          list: testList,
+          onPick: jest.fn(),
+        }}
+      >
         <StateSearch />
-      </SearchStateContext.Provider>
+      </SearchStateContext.Provider>,
     );
 
     // check there is no dropdown list rendered

@@ -4,7 +4,4 @@ import 'bulma';
 import App from './components/App';
 import './style.css';
 
-render(
-    <App />,
-    document.getElementById('root'),
-);
+render(<App />, document.getElementById('root'));
