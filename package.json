@@ -10,9 +10,12 @@
   "license": "ISC",
   "husky": {
     "hooks": {
-      "pre-commit": "npx pretty-quick --staged",
-      "pre-push": "npx lint-staged && jest --bail --findRelatedTests"
+      "pre-commit": "npx pretty-quick --staged && lint-staged",
+      "pre-push": "npm run test"
     }
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
   },
   "dependencies": {
     "bulma": "^0.9.1",
