@@ -20,13 +20,13 @@ describe('getState', () => {
     expect(getState('AK', testStates)).toEqual({
       state: 'Alaska',
       code: 'AK',
-    })
+    });
   });
 
   it('returns undefined for empty string', () => {
-    expect(getState('', testStates)).toEqual(undefined)
+    expect(getState('', testStates)).toEqual(undefined);
   });
-})
+});
 
 describe('searchStates', () => {
   it('returns AL, AK for query: al, key: state', () => {
@@ -39,11 +39,10 @@ describe('searchStates', () => {
         state: 'Alaska',
         code: 'AK',
       },
-    ])
+    ]);
   });
 
   it('returns empty array for query: empty string, key: state', () => {
-    expect(searchStates('', 'state', testStates)).toEqual([])
+    expect(searchStates('', 'state', testStates)).toEqual([]);
   });
-})
-
+});
