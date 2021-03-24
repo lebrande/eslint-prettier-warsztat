@@ -3,7 +3,8 @@
   "scripts": {
     "start": "parcel src/index.html",
     "test": "jest --watch",
-    "format": "npx prettier --write ."
+    "format": "npx prettier --write .",
+    "lint": "eslint ."
   },
   "husky": {
     "hooks": {
@@ -26,6 +27,8 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.1",
     "babel-jest": "^26.6.3",
+    "eslint": "^7.22.0",
+    "eslint-plugin-react": "^7.23.1",
     "husky": "^4.3.8",
     "jest": "^26.6.3",
     "prettier": "2.2.1",
