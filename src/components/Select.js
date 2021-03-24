@@ -1,21 +1,15 @@
 import React from 'react';
 
-const Select = ({
-  label,
-  value,
-  onSelect,
-  children,
-}) => {
+// eslint-disable-next-line react/prop-types
+const Select = ({ label, value, onSelect, children }) => {
   return (
     <div className="field">
-      <label className="label">
-        {label}
-      </label>
+      <label className="label">{label}</label>
       <div className="control">
         <div className="select">
           <select
             value={value}
-            onChange={({target}) => onSelect(target.value)}
+            onChange={({ target }) => onSelect(target.value)}
           >
             {children}
           </select>
@@ -23,6 +17,6 @@ const Select = ({
       </div>
     </div>
   );
-}
+};
 
 export default Select;
